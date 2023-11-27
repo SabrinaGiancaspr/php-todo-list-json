@@ -27,13 +27,14 @@ createApp({
                         'Content-Type': 'multipart/form-data',
                     }})
                 .then((res) =>{
-                    console.log(res.data)
+                    // console.log(res.data.results)
+                    this.todos = res.data.results;
                 })
             }else {
                 return
             }
-           
-        }
+           this.newTask = ''
+        },
     },
 
     created(){

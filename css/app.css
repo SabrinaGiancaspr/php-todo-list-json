@@ -14,3 +14,7 @@ ul{
     padding-top: 30px;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+

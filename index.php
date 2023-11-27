@@ -21,7 +21,8 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="task in todos">{{task.text}}</li>
+                        <li v-for="(task, index) in todos" :class="{ 'completed': task.done == true }">
+                        <span>{{ task.text }}</span>
                     </ul>
                 </div>
             </section>
