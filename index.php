@@ -14,7 +14,7 @@
             <section>
                 <div class="container">
                     <h1>Todo</h1>
-                    <input type="text">
+                    <input type="text" v-model="newTask" @keyup.enter="storeNewTask">
                 </div>
             </section>
 
