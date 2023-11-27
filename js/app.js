@@ -35,6 +35,9 @@ createApp({
             }
            this.newTask = ''
         },
+        toggleTaskStatus(index) {
+            this.todos[index].done = !this.todos[index].done;
+          },
     },
 
     created(){

@@ -21,7 +21,7 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="(task, index) in todos" :class="{ 'completed': task.done == true }">
+                        <li v-for="(task, index) in todos" @click="toggleTaskStatus(index)" :class="{ 'completed': task.done == true }">
                         <span>{{ task.text }}</span>
                     </ul>
                 </div>
