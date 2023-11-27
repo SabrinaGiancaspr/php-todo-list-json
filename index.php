@@ -21,11 +21,12 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li>tasks</li>
+                        <li v-for="task in todos">{{task.text}}</li>
                     </ul>
                 </div>
             </section>
         </main>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 </html>
