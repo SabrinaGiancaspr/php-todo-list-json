@@ -21,9 +21,14 @@
             <section>
                 <div class="container">
                     <ul>
-                        <li v-for="(task, index) in todos"  :class="{ 'completed': task.done == true }">
-                            <span @click="toggleTaskStatus(index)">{{ task.text }}</span>
-                            <button @click="deleteTask(index)">elimina</button>
+                        <li class="tasks" v-for="(task, index) in todos">
+                            <span class="item"  :class="{ 'completed': task.done == true }"  @click="toggleTaskStatus(index)">{{ task.text }}</span>
+                            <button class="btn" @click="deleteTask(index)">Delete</button>
+                            <label class="toggle">
+                                <input class="toggle-input" type="checkbox" />
+                                <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+                                <span class="toggle-handle"></span>
+                            </label>
                         </li>
                     </ul>
                 </div>
