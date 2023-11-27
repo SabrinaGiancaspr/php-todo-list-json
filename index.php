@@ -6,7 +6,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <div id="app">
