@@ -35,8 +35,19 @@ createApp({
             }
            this.newTask = ''
         },
+
         toggleTaskStatus(index) {
-            this.todos[index].done = !this.todos[index].done;
+            
+            const data = {
+                'index': index,
+            }
+            axios.post('./changeStatus.php', data, { 
+                 headers: {
+                    'Content-Type': 'multipart/form-data',
+            }})
+            .then((res =>{
+                this.todos = res.data.results
+            }))
           },
     },
 
